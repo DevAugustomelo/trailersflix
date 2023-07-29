@@ -3,14 +3,15 @@
 :root{
     --vermelho: #E50914;
     --preto: #141414;
-    --dourado: #DDA520
+    --dourado: #DDA520;
 }
 
 *{
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     box-sizing: border-box;
     font-family: 'Arial', Times, serif;
+    /* max-width: 1480px; */
     
 }
 
@@ -18,19 +19,21 @@
 body{
     background: var(--preto);
     color: #ffffff;
+    
 }
 
-header .box{
+header .menu{
+    background: linear-gradient(180deg, rgba(0,0,0,0.70) 0%, rgb(33, 33, 33)  100%);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 10px;
     
 }
 
 header .logo{
     display: inline-flex;
     align-items: center;
+    padding: 10px;
         
 }
 
@@ -43,9 +46,9 @@ header .logo i{
 
 header .logo:hover{
     filter: drop-shadow(0px 0px 3px#ffffff);
-    cursor:pointer;
+    cursor: pointer;
     transition: transform .7s;
-    transform: scale(1.05)
+    transform: scale(1.05);
 }
 
 header #logo1{
@@ -68,18 +71,18 @@ header nav a {
 }
 
 header nav a:hover {
-    color:#fff
-
+    color:#fff;
 }
 
-header nav .selected{
+header nav .menuSelected{
+    font-size: 18px;
     font-weight: bold;
     color: var(--vermelho);
 }
 
 /* Principal */
 
-main .banner-principal{
+main .bannerPrincipal{
     height: 500px;
     width: 100vw;
     background: linear-gradient(0.25turn, #141414,#141414, #AAA, 50%,#AAA,#141414, #141414);
@@ -90,7 +93,7 @@ main .banner-principal{
     flex-direction: column;
 }
 
-main .banner-principal h1{
+main .bannerPrincipal h1{
     font-size: 80px;
 }
 
@@ -118,7 +121,7 @@ main .ultimas .wrapper{
 
 }
 
-main section .wrapper .imagem-box{
+main section .wrapper .imagemBox{
     background-color: #aaa;
     min-width: 300px;
     width: 100%;
@@ -146,8 +149,8 @@ main section .wrapper .imagem-box{
 main section.cadastro{
     /* margin: 5px; */
     height: 300px;
-    background:linear-gradient(to right,rgba(128,0,128,.30) 0%,rgba(128,0,128,.30) 100%);
-
+    background:linear-gradient(to right,rgba(248, 223, 248, 0.3),rgba(57, 5, 51, 0.3));
+    background-color: linear-gradient(180deg, rgba(3,3,3,.79) 0%, rgba(0,0,0,0)100%);
 }
 
 footer{
@@ -155,8 +158,8 @@ footer{
     background-position: center bottom;
 }
 
-footer .footer-content{
-    height: 120px;
+footer .footerContent{
+    height: 240px;
     
     background-color: rgba(0,0,0,.60);
     font-family: 'Roboto';
@@ -167,7 +170,7 @@ footer .footer-content{
 
 }
 
-footer .footer-content img{
+footer .footerContent img{
     width: 130px;
 }
 

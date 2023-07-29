@@ -7,51 +7,206 @@
     <meta name="description" content="Trailers de filmes e séries, projeto acadêmico desenvolvimento web1">
     <meta name="keywords" content="trailers, filmes, séries">
 
-    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
-    rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
     crossorigin="anonymous">
     
     <!-- css principal -->
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <!-- css cadastro -->
+    <link rel="stylesheet" href="../css/cadastro.css">
     <title>TRAILERS-Cadastro</title>
 </head>
 <body>
-    <header>
-        <div class="box">
-            <div class="logo">
-                <i class="fa-solid fa-film fa-2xl" style="color:#daa520"></i>
-                <h2 id="logo1">TRAILERS</h2>
-                <h2 id="logo2">FLIX</h2>
+    <div class="container-fluid g-0">
+        <header>
+            <div class="menu">
+                <div class="logo">
+                    <i class="fa-solid fa-film fa-2xl" style="color:#daa520"></i>
+                    <h2 id="logo1">TRAILERS</h2>
+                    <h2 id="logo2">FLIX</h2>
+                </div>
+                <nav>
+                    <a href="../index.html">Home</a>
+                    <a href="#">Filmes</a>
+                    <a href="#">Séries</a>
+                    <a href="#login">Login</a>
+                    <a class="menuSelected" href="./cadastro.html">Cadastro</a>
+                </nav>
             </div>
-            <nav>
-                <a href="/index.html">Home</a>
-                <a href="#">Filmes</a>
-                <a href="#">Séries</a>
-                <a href="#login">Login</a>
-                <a class="selected" href="/pages/cadastro.html">Cadastro</a>
-            </nav>
-        </div>
-    </header>
-    <main>
-
-    </main>
-    <footer>
-        <div class="footer-box">
-            <div class="footer-content">
-                <img src="/img/logo.png" alt="logo">
-                <span>© 2023 - TRAILERSFLIX</span>
+        </header>
+        <main>
+            <div class="boxCenter py-5 text-center ">
+                <div class="row g-5">
+                    <div class="formBox col-8 offset-4 p-5" >
+                        <h1 class="text-start mb-5">Cadastro</h1>
+                        <form 
+                        action="./cadastro.html" 
+                        method="post" 
+                        class="needs-validation" 
+                        >
+                            
+                                <div class="row g-3">
+                                    <div class="inputBox form-floating mb-3 col-sm-6">
+                                        <input 
+                                        type="text" 
+                                        name="nome-cadastro" 
+                                        id="id_nome_cadastro" placeholder="Informe o nome de usuário"
+                                        value=""
+                                        class="form-control"
+                                        required
+                                        >
+                                        <label for="id_nome_cadastro" class="form-label">Nome de usuário</label>
+                                        <div class="invalid-feedback">Inserir um nome válido</div>
+                                    </div>
+                                    <div class="inputBox form-floating col-sm-6">
+                                        <input 
+                                        type="password" 
+                                        name="senha-cadastro" 
+                                        id="id_senha_cadastro"
+                                        placeholder=""
+                                        class="form-control" required>
+                                        <label for="id_senha_cadastro">Senha</label>
+                                    </div>
+                                    <div class="inputBox form-floating mb-3">
+                                        <input 
+                                        type="email" 
+                                        name="email-cadastro" 
+                                        id="id_email_cadastro"
+                                        placeholder=""
+                                        class="form-control" required>
+                                        <label for="id_email_cadastro">Email</label>
+                                    </div>
+                                    <div class="inputBox form-floating mb-3 col-12">
+                                        <input 
+                                        type="tel" 
+                                        name="telefone" 
+                                        id="telefone" 
+                                        placeholder=""
+                                        class="form-control" required>
+                                        <label for="telefone">Telefone</label>
+                                    </div>
+                                    <div class="inputBox my-3 col-sm-6">
+                                        <h4 class="mb-3 text-start">Sexo:</h4>
+                                        <div class="form-check text-start">
+                                            <input type="radio" name="sexo" id="id_masculino" value="masculino" class="inputUsuario" required>
+                                            <label for="id_masculino">Masculino</label>
+                                        </div>
+                                        <div class="form-check text-start">
+                                            <input type="radio" name="sexo" id="id_feminino" value="feminino" class="inputUsuario" required>
+                                            <label for="id_feminino">Feminino</label>
+                                        </div>
+                                        <div class="form-check text-start">
+                                            <input type="radio" name="sexo" id="id_outros" value="outros" class="inputUsuario" required>
+                                            <label for="id_outros">Outros</label>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="inputBox col-sm-6 mb-3">
+                                        <label for="id_nascimento">
+                                            <h4>Data de Nascimento:</h4>                                            
+                                        </label>
+                                        <input 
+                                        type="date" 
+                                        name="nascimento" 
+                                        id="id_nascimento" 
+                                        placeholder=""
+                                        class="form-control" required>
+                                    </div>
+                                    <br>
+                                    <div class="inputBox form-floating mb-3 col-sm-3">
+                                        <input 
+                                        type="text" 
+                                        name="cep" 
+                                        id="cep"
+                                        placeholder="" 
+                                        class="form-control" required>
+                                        <label for="cep">CEP:</label>
+                                    </div>
+                                    <div class="inputBox form-floating mb-3 col-sm-3">
+                                        <input 
+                                        type="text" 
+                                        name="cidade" 
+                                        id="cidade"
+                                        placeholder="" 
+                                        class="form-control" required>
+                                        <label for="cidade">Cidade:</label>
+                                    </div>
+                                    <div class="inputBox form-floating mb-3 col-sm-3">
+                                        <input 
+                                        type="text" 
+                                        name="estado" 
+                                        id="estado"
+                                        placeholder="" 
+                                        class="form-control" required>
+                                        <label for="estado">Estado:</label>
+                                    </div>
+                                    <div class="inputBox form-floating mb-3 col-sm-3">
+                                        <input 
+                                        type="text" 
+                                        name="bairro" 
+                                        id="bairro"
+                                        placeholder="" 
+                                        class="form-control" required>
+                                        <label for="bairro">Bairro:</label>
+                                    </div>
+                                    <div class="inputBox form-floating mb-3 col-sm-10">
+                                        <input 
+                                        type="text" 
+                                        name="endereco" 
+                                        id="endereco" 
+                                        placeholder=""
+                                        class="form-control" required>
+                                        <label for="endereco">Endereço:</label>
+                                    </div>
+                                    <div class="inputBox form-floating mb-3 col-sm-2">
+                                        <input 
+                                        type="text" 
+                                        name="numero" 
+                                        id="numero"
+                                        placeholder="" 
+                                        class="form-control" required>
+                                        <label for="numero">Número:</label>
+                                    </div>                           
+                                    
+                                    <br>
+                                    <button 
+                                    type="submit" 
+                                    name="enviar-btn" 
+                                    id="enviar-btn"
+                                    class="btn btn-lg btn-block btn-danger">Enviar</button>
+                                    
+                                </div>
+                            
+                        </form>
+                    </div>
+                </div>
             </div>
-        </div>
-    </footer>    
+        </main>
+        <footer class="container-fluid">
+            <div class="footerBox">
+                <div class="footerContent">
+                    <img src="../img/logo.png" alt="logo">
+                    <span>© 2023 - TRAILERSFLIX</span>
+                </div>
+            </div>
+        </footer>    
+    </div>
 </body>
 
  <!-- Bootstrap script js -->
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
- integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
- crossorigin="anonymous"></script>
+ <script 
+ src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+ integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" 
+ crossorigin="anonymous">
+</script>
  <!-- Font Awesome ícones -->
- <script src="https://kit.fontawesome.com/ea89d0a57a.js" crossorigin="anonymous"></script>
+ <script src="https://kit.fontawesome.com/ea89d0a57a.js" 
+ crossorigin="anonymous">
+</script>
 </html>
