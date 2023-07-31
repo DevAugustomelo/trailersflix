@@ -1,15 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Familjen+Grotesk&family=Oswald&family=Roboto&display=swap');
-
-:root{
-    --vermelho: #E50914;
-    --preto: #141414;
-    --dourado: #DDA520;
-    --cinza: #8c8c8c;
-    --cinza-claro: #aaa;
-
-}
-
 body main{
     background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(https://e0.pxfuel.com/wallpapers/452/6/desktop-wallpaper-poster-movie-film-movies-posters-bollywood-movie-collage.jpg);
     background-repeat: repeat-y;
@@ -18,13 +7,14 @@ body main{
 }
 
 main .boxCenter{
-    max-width: 980px;  
+    max-width: 980px;
 
 }
 
 main .formBox {
     background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 16px;   
+    border-radius: 16px;
+    padding: 1rem;
 }
 
 main .formBox h1{
@@ -32,9 +22,6 @@ main .formBox h1{
     font-weight: bold;
     margin-bottom: 28px;
 }
-
-
-
 
 main .formBox .form-control{
     background-color: #333;
@@ -48,9 +35,6 @@ main form input.form-control:focus{
     box-shadow: 0 0 0 0.25rem rgba(185,45,43,.25);
 }
 
-
-label {
-}
 
 ::-webkit-calendar-picker-indicator {
   cursor: pointer;

@@ -1,0 +1,37 @@
+.bgMain{
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url(https://globaltranslations.com.br/wp-content/uploads/2017/08/21.-Abertura-Como-legendas-s%C3%A3o-feitas.jpg);
+    /* background-image: url(https://globaltranslations.com.br/wp-content/uploads/2017/08/21.-Abertura-Como-legendas-s%C3%A3o-feitas.jpg); */
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+
+body main .loginBox{
+    max-width: 330px;
+    padding: 1rem;
+}
+
+main form input.form-control:focus{
+    box-shadow: 0 0 0 0.25rem rgba(185,45,43,.25);
+}
+
+main form .form-control{
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+
+}
+
+main input{
+    background-color: #333;
+    color: #fff;
+
+}
+
+.btn{
+    width: 100%;
+    font-weight: bold;
+    background-color: var(--vermelho);
+}
