@@ -207,6 +207,9 @@ main section.cadastro{
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    margin:20px;
+    border-top: 16px dashed #faf8f8;
+    border-bottom: 16px dashed #faf8f8;
 }
 
 main .cadastro .btnCadastro{
