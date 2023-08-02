@@ -4,6 +4,7 @@
     --vermelho: #E50914;
     --preto: #141414;
     --dourado: #DDA520;
+    --amarelo: #ffc107;
     --cinza: #8c8c8c;
     --cinza-claro: #aaa;
 }
@@ -27,6 +28,14 @@ body{
 a{
     text-decoration: none;
     color: #fff;
+}
+
+.titulo{
+    color: #fff;
+    padding-left: 10px;
+    border-left: 4px solid var(--amarelo);
+    position: relative;
+    display: inline-block;
 }
 
 header .menu{
@@ -91,13 +100,18 @@ header nav .menuSelected{
 
 main .bannerPrincipal{
     height: 500px;
-    width: 100vw;
     background: linear-gradient(0.25turn, #141414,#141414, #AAA, 50%,#AAA,#141414, #141414);
     font-family: 'Familjen Grotesk', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+   
+}
+
+div.videoFrame {
+    height: 90%;
+
 }
 
 
@@ -199,7 +213,7 @@ main .wrapper .titulo-trailer{
     font-size: 1.1em;
 }
 
-main section.cadastro{
+main section .cadastro{
     /* margin: 5px; */
     height: 300px;
     /* background:linear-gradient(to right,rgba(248, 223, 248, 0.3),rgba(57, 5, 51, 0.3)); */
@@ -208,8 +222,8 @@ main section.cadastro{
     background-position: center;
     background-repeat: no-repeat;
     margin:20px;
-    border-top: 16px dashed #faf8f8;
-    border-bottom: 16px dashed #faf8f8;
+    border-top: 16px dashed var(--cinza-claro);
+    border-bottom: 16px dashed var(--cinza-claro);
 }
 
 main .cadastro .btnCadastro{
@@ -264,5 +278,26 @@ footer .footerContent img{
 .botao i{
     margin-right: 6px;
 }
+
+
+*::-webkit-scrollbar {
+    width: 15px;
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-track {
+    width: 2px;
+    /* box-shadow: inset 0 0 0.3rem #ecd506; */
+    background-color:transparent;   
+
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--cinza);
+    border-radius: 8px;
+    /* border-top: 7px solid var(--dourado); */
+    /* border-bottom: 7px solid var(--dourado); */
+}
+
 
 

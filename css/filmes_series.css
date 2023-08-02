@@ -1,0 +1,137 @@
+
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+a{
+    color: var(--dourado);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.3;
+}
+
+.media-box-title {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    font-weight: 600;
+    padding: 0.5rem 0.3rem ;
+}
+
+.play{
+    position: absolute;
+    top: 10;
+    left: 30%;
+    padding-bottom: 50%;
+    /* display: flex; */
+    z-index: 2;
+}
+
+section .row .media-box {
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #104d75;
+    box-shadow: 0px 0px 9px #09081b7a;
+}
+
+section .row .media-thumb {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    padding-bottom: 158%;
+    transition: .3s all ease;
+
+}
+
+.media-thumb::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+}
+
+.media-info {
+    position: absolute;
+    background: linear-gradient(to top, #0c0f21, #0000);
+    text-align: center;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.media-box-category {
+    text-align: center;
+    display: inline-flex;
+    background: #ffc107;
+    border: 1px solid #ffc107;
+    color: #333;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+    align-items: center;
+
+}
+
+.full-click{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+section .media-box .media-thumb:hover {
+    transform: scale(1.05);
+    background-color: #0c0f21;
+}
+
+.media-play {
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    border: 4px dashed #fff;
+    border-radius: 50px;
+    font-size: 25px;
+    position: absolute;
+    text-align: center;
+    top: -50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+
+.bodyText {
+    background-color: linear-gradient(to top, #0c0f21, #0000) !important;
+    /* text-align: center;
+    bottom: 0;
+    right: 0;
+    width: 100%; */
+}
+
+.teste {
+    overflow: hidden;
+    z-index: 3;
+}
+
+.card:hover {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    transition: transform .7s;
+    transform: scale(1.05);
+}
