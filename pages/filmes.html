@@ -15,6 +15,8 @@
         rel="stylesheet" 
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" 
         crossorigin="anonymous">
+        <!-- animation -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
         <!-- css principal -->
         <link rel="stylesheet" href="../css/main.css">
@@ -42,241 +44,262 @@
     </header>
     <section class="pt-4 pb-5">
         <div class="container">
-            <h2 class="titulo mb-3">Filmes</h2>
+            <h2 class="titulo mb-3" data-aos="fade-right" data-aos-duration="1000">Filmes</h2>
             <div class="row row-cols-2 row-cols-sm-4 row-cols-lg-5">
-
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-down" data-aos-duration="1200">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
+                    <!-- Start media-play -->
                         <div 
                         class="media-thumb" 
-                        style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/the-soccer-football-movie-1630854557.jpg);">
-                        </div>
-
-                        <!-- Start media-play -->
-                        <a href="single-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
+                        style="background-image: url(https://www.themoviedb.org/t/p/w300_and_h450_bestv2/AhmVkXerBVsuI6PejPeqaaW2wwT.jpg);"
+                        >
+                        <a href="http://www.youtube.com/embed/sqHP-zdvXG8" target="tv_iframe">
+                            <button id="myModal" 
+                                    class="centralizar fs-1 btn btn-transparent text-white"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >
+                                    
+                                    <i class="fa-solid fa-play" style="color:#daa520"></i>
+                            </button>
                         </a>
                         
+                        </div>
                         <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
-                            </a>
-                            <h5 class="media-box-title">The Soccer Football Movie</h5>
+                            <h5 class="media-box-title">Besouro Azul</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
+                    <div class="container">
+                        <!-- inicio Modal -->
+                        <div class="modal fade" id="exampleModal" data-bs-theme="dark" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-xl modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                    <img src="../img/logo.png" alt="logo">
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                        <iframe 
+                                        width="100%" 
+                                        height="500"
+                                        name="tv_iframe" 
+                                        src="https://www.youtube.com/embed/" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        allowfullscreen></iframe>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                
+                          <!-- botao modal -->
+                          <!-- <a href="http://www.youtube.com/embed/sqHP-zdvXG8" target="tv_iframe">
+                
+                              <button id="myModal" type="button" class="btn btn-danger my-5" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Play
+                              </button>
+                          </a> -->
+                           <!-- fim modal -->
+                    </div>
                 </div>
 
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-down" data-aos-duration="1500">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
                         <div class="media-thumb" style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/detective-knight-redemption-1630854553.webp);">
+                            <a href="http://www.youtube.com/embed/bXMbkKzvpHY" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
+                            </a>
                         </div>
-
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
-
                         <!-- Start media-info -->
                         <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
-                            </a>
                             <h5 class="media-box-title">Detective Knight: Redemption</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
-
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-down" data-aos-duration="1800">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
                         <div class="media-thumb" style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/pinocchio-1630854560.webp);">
+                            <a href="http://www.youtube.com/embed/7Hkedrl3xeE" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
+                            </a>
                         </div>
-
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
-
                         <!-- Start media-info -->
                         <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
-                            </a>
                             <h5 class="media-box-title">Pinocchio</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
 
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-down" data-aos-duration="2100" >
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
                         <div class="media-thumb" style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/hawa-1630854558.jpg);">
-                        </div>
-
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
-                        <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
+                            <a href="http://www.youtube.com/embed/7Hkedrl3xeE" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
                             </a>
+                        </div>
+                        <div class="media-info">
                             <h5 class="media-box-title">Hawa</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
 
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-down" data-aos-duration="2400">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
-                        <div class="media-thumb" style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/christmas-bloody-christmas-1630854554.jpg);">
-                        </div>
-
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
-                        <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
+                        <div class="media-thumb" style="background-image: url(https://www.themoviedb.org/t/p/w220_and_h330_face/ww0197yqAzP0ih3Er0n18A7D5Zt.jpg);">
+                            <a href="http://www.youtube.com/embed/7Hkedrl3xeE" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
                             </a>
-                            <h5 class="media-box-title">Christmas Bloody Christmas</h5>
+                        </div>
+                        <div class="media-info">
+                            <h5 class="media-box-title">Megatubarão 2</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
 
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-up" data-aos-duration="1500">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
                         <div class="media-thumb" style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/night-at-the-museum-kahmunrah-rises-again-1630854559.jpg);">
+                            <a href="http://www.youtube.com/embed/7Hkedrl3xeE" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
+                            </a>
                         </div>
-
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
                         <!-- Start media-info -->
                         <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
-                            </a>
                             <h5 class="media-box-title">Night at the Museum: Kahmunrah Rises Again</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
 
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-right" data-aos-duration="1800">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
                         <div class="media-thumb" style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/black-adam-1630854343.jpg);">
+                            <a href="http://www.youtube.com/embed/7Hkedrl3xeE" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
+                            </a>
                         </div>
 
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
                         <!-- Start media-info -->
                         <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
-                            </a>
                             <h5 class="media-box-title">Black Adam</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
 
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-right" data-aos-duration="2000">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
                         <div class="media-thumb" style="background-image: url(https://br.web.img2.acsta.net/medias/nmedia/18/87/76/06/19961267.jpg);">
+                            <a href="http://www.youtube.com/embed/7Hkedrl3xeE" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
+                            </a>
                         </div>
-
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
                         <!-- Start media-info -->
                         <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
-                            </a>
                             <h5 class="media-box-title">Bad Boys II</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
 
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-right" data-aos-duration="2500">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
                         <div class="media-thumb" style="background-image: url(https://img.vxdn.net/t-max/w_312/h_468/avatar-the-way-of-water-1630854576.jpg);">
+                            <a href="http://www.youtube.com/embed/7Hkedrl3xeE" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
+                            </a>
                         </div>
-
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
                         <!-- Start media-info -->
                         <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
-                            </a>
                             <h5 class="media-box-title">Avatar: The Way of Water</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
 
-                <div class="col mt-3">
+                <div class="col mt-3 text-center" data-aos="fade-right" data-aos-duration="3000">
                     <!-- start media-box -->
                     <div class="media-box">
-                        <a href="single-movie.html" class="full-click"></a>
                         <div class="media-thumb" style="background-image: url(https://br.web.img3.acsta.net/medias/nmedia/18/87/77/52/19961418.0thumb.jpg);">
+                            <a href="http://www.youtube.com/embed/7Hkedrl3xeE" target="tv_iframe">
+                                <button id="myModal" 
+                                        class="centralizar fs-1 btn btn-transparent text-white"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                        
+                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                </button>
+                            </a>
                         </div>
-
-                        <!-- Start media-play -->
-                        <a href="-movie.html" class="media-play">
-                            <i class="icofont-ui-play"></i>
-                        </a>
                         <!-- Start media-info -->
                         <div class="media-info">
-                            <a href="movies.html" class="media-box-category">
-                                <i class="icofont-video-alt"></i>
-                                Movies
-                            </a>
                             <h5 class="media-box-title">Duro de Matar 4.0</h5>
                         </div>
                     </div>
                     <!-- end media-box -->
                 </div>
-            </div>
+            </div>            
         </div>
 
     </section>
@@ -292,4 +315,10 @@ crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/ea89d0a57a.js" 
 crossorigin="anonymous">
 </script>
+<!-- animation -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+  </script>
+
 </html>

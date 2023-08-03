@@ -42,17 +42,45 @@
         </header>
         <main class="boxMain">
             <div class="bannerPrincipal py-5">
-                <h4>Os Melhores Trailers em um só lugar</h4>
-                <h1>TRAILERSFLIX</h1>
-                <div class=" videoFrame col-lg-6">
+                <div class="container text-center">
+                    
+                    <h4>Os Melhores Trailers em um só lugar</h4>
+                    <h1>TRAILERSFLIX</h1>
+                </div>
+                <div id="tv" class=" videoFrame col-lg-6">
+
                     <iframe 
                     width="100%" 
                     height="100%" 
-                    src="https://www.youtube.com/embed/pi4UJDCkSTU?autoplay=1&mute=1" 
-                    title="Missão: Impossível - Acerto De Contas Parte 1 | Teaser Trailer Oficial | LEG | Paramount Pictures" 
+                    name="tv"
+                    src="https://www.youtube.com/embed/BKviRM0KF2A?autoplay=1&mute=1&t=4"
                     frameborder="0" 
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                     allowfullscreen></iframe>
+                </div>
+                <div class="container">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" data-bs-theme="dark" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-xl modal-dialog-centered">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                                <img src="../img/logo.png" alt="logo">
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                    <iframe 
+                                    width="100%" 
+                                    height="500"
+                                    name="tv_iframe" 
+                                    src="https://www.youtube.com/embed/" 
+                                    frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                    allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <section class="ultimas">
@@ -61,70 +89,108 @@
                 </div>
                 <div class="wrapper">
                     <div class="imagemBox">
+                        <!-- cartaoBox começa -->
                         <div class="container cartaoBox">
                             <div class="cartao">
-                                <a class="imgLink" href="https://youtu.be/pi4UJDCkSTU" target="_blank">
+                                <a class="imgLink" href="https://www.youtube.com/embed/pi4UJDCkSTU" target="tv_iframe">
                                     <img 
                                     src="https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/1kSpSW5geG01phAYENdFeWDZXMy.jpg" 
                                     alt="img-capa" 
                                     title="Missão: Impossível - Acerto de Contas Parte 1">
                                     <div class="play">
-                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                        <button id="myModal" 
+                                        class="btn btn-transparent"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                            <i class="fa-solid fa-play fa-2xl fs-1" style="color:#daa520"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
                             <div class="titulo-trailer">
-                                <h5 class="mb-0">
                                     <a 
-                                    href="https://youtu.be/pi4UJDCkSTU"
-                                    target="_blank" 
-                                    title="nome-do-trailer">Missão Impossível: Acerto de Contas Parte 1
+                                    href="https://www.youtube.com/embed/pi4UJDCkSTU"
+                                    target="tv_iframe" 
+                                    title="Missão Impossível"
+                                    >
+                                    <button id="myModal" 
+                                    class="btn btn-transparent text-white fw-bold"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >
+                                    <h5 class="mb-0"> M:I - Acerto de Contas Parte 1 </h5>
+
+                                    </button>
                                 </a>
-                                </h5>
+                               
                                 <h6>Teaser Trailer Oficial | LEG</h6>
                             </div>
+                            <!-- cartaoBox termina -->
                         </div>
                         <div class="container cartaoBox">
                             <div class="cartao">
-                                <a class="imgLink" href="https://youtu.be/F2-BLKAidao" target="_blank">
+                                <a class="imgLink" href="https://www.youtube.com/embed/F2-BLKAidao" target="tv_iframe">
                                     <img 
                                     src="https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/4XM8DUTQb3lhLemJC51Jx4a2EuA.jpg" 
                                     alt="img-capa" 
                                     title="Velozes & Furiosos 10">
                                     <div class="play">
-                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                        <button id="myModal" 
+                                        class="btn btn-transparent"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                            <i class="fa-solid fa-play fa-2xl fs-1" style="color:#daa520"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
                             <div class="titulo-trailer">
                                 <h5 class="mb-0">
                                     <a 
-                                    href="https://youtu.be/F2-BLKAidao"
-                                    target="_blank" 
-                                    title="Velozes & Furiosos 10">Velozes & Furiosos 10
-                                </a>
+                                    href="https://www.youtube.com/embed/F2-BLKAidao"
+                                    target="tv_iframe" 
+                                    title="Velozes & Furiosos 10"
+                                    >
+                                    <button id="myModal" 
+                                    class="btn btn-transparent text-white fw-bold"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >
+                                    Velozes & Furiosos 10
+                                      </button>
+                                   
+                                    </a>
                                 </h5>
                                 <h6>Trailer Oficial | LEG</h6>
                             </div>
                         </div>
                         <div class="container cartaoBox">
                             <div class="cartao">
-                                <a class="imgLink" href="https://www.youtube.com/watch?v=e8-GtGmlu18" target="_blank">
+                                <a class="imgLink" href="https://www.youtube.com/embed/e8-GtGmlu18" target="tv_iframe">
                                     <img 
                                     src="https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/hPcP1kv6vrkRmQO3YgV1H97FE5Q.jpg" 
                                     alt="img-capa" 
                                     title="Sobrenatural: A Porta Vermelha">
                                     <div class="play">
-                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                        <button id="myModal" 
+                                        class="btn btn-transparent"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                            <i class="fa-solid fa-play fa-2xl fs-1" style="color:#daa520"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
                             <div class="titulo-trailer">
                                 <h5 class="mb-0">
                                     <a 
-                                    href="https://www.youtube.com/watch?v=e8-GtGmlu18"
-                                    target="_blank" 
-                                    title="Sobrenatural: A Porta Vermelha">Sobrenatural: A Porta Vermelha
+                                    href="https://www.youtube.com/embed/e8-GtGmlu18"
+                                    target="tv_iframe" 
+                                    title="Sobrenatural: A Porta Vermelha">
+                                    <button id="myModal" 
+                                    class="btn btn-transparent text-white fw-bold"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >
+                                    Sobrenatural: A Porta Vermelha
+                                      </button>
                                 </a>
                                 </h5>
                                 <h6>Trailer Oficial</h6>
@@ -132,22 +198,34 @@
                         </div>
                         <div class="container cartaoBox">
                             <div class="cartao">
-                                <a class="imgLink" href="https://youtu.be/hyyyKcfJRGQ" target="_blank">
+                                <a class="imgLink" href="https://www.youtube.com/embed/hyyyKcfJRGQ" target="tv_iframe">
                                     <img 
                                     src="https://latinitasmagazine.org/wp-content/uploads/2023/07/soundoffreedomposter_hdv-300x200.jpg" 
                                     alt="img-capa" 
                                     title="Sound of Freedom">
                                     <div class="play">
-                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                        <button id="myModal" 
+                                        class="btn btn-transparent"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                            <i class="fa-solid fa-play fa-2xl fs-1" style="color:#daa520"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
                             <div class="titulo-trailer">
                                 <h5 class="mb-0">
                                     <a 
-                                    href="https://youtu.be/hyyyKcfJRGQ"
-                                    target="_blank" 
-                                    title="Sound of Freedom">Sound of Freedom
+                                    href="https://www.youtube.com/embed/hyyyKcfJRGQ"
+                                    target="tv_iframe" 
+                                    title="Sound of Freedom">
+                                    <button id="myModal" 
+                                    class="btn btn-transparent text-white fw-bold"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >
+                                    
+                                    Sound of Freedom
+                                      </button>
                                 </a>
                                 </h5>
                                 <h6>Trailer Oficial</h6>
@@ -155,44 +233,68 @@
                         </div>
                         <div class="container cartaoBox">
                             <div class="cartao">
-                                <a class="imgLink" href="https://youtu.be/n0jO_RGrAD0" target="_blank">
+                                <a class="imgLink" href="https://www.youtube.com/embed/n0jO_RGrAD0" target="tv_iframe">
                                     <img 
                                     src="https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/foGkPxpw9h8zln81j63mix5B7m8.jpg" 
                                     alt="img-capa" 
                                     title="The Witcher">
                                     <div class="play">
-                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                        <button id="myModal" 
+                                        class="btn btn-transparent"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                            <i class="fa-solid fa-play fa-2xl fs-1" style="color:#daa520"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
                             <div class="titulo-trailer">
                                 <h5 class="mb-0">
                                     <a 
-                                    href="https://youtu.be/n0jO_RGrAD0"
-                                    target="_blank" 
-                                    title="The Witcher: Temporada 3">The Witcher: Temporada 3                            </a>
+                                    href="https://www.youtube.com/embed/n0jO_RGrAD0"
+                                    target="tv_iframe" 
+                                    title="The Witcher: Temporada 3">
+                                    <button id="myModal" 
+                                    class="btn btn-transparent text-white fw-bold"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >
+                                    
+                                    The Witcher: Temporada 3  
+                                      </button>
+                                    </a>
                                 </h5>
                                 <h6>Teaser Trailer Oficial</h6>
                             </div>
                         </div>
                         <div class="container cartaoBox">
                             <div class="cartao">
-                                <a class="imgLink" href="https://youtu.be/20yY_YxktT4" target="_blank">
+                                <a class="imgLink" href="https://www.youtube.com/embed/20yY_YxktT4" target="tv_iframe">
                                     <img 
                                     src="https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/mDVIU9Y2TYeK2W29a2HRBiWt3JA.jpg" 
                                     alt="img-capa" 
                                     title="Jack Ryan de Tom Clancy">
                                     <div class="play">
-                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                        <button id="myModal" 
+                                        class="btn btn-transparent"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                            <i class="fa-solid fa-play fa-2xl fs-1" style="color:#daa520"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
                             <div class="titulo-trailer">
                                 <h5 class="mb-0">
                                     <a 
-                                    href="https://youtu.be/20yY_YxktT4"
-                                    target="_blank" 
-                                    title="Jack Ryan de Tom Clancy">Jack Ryan de Tom Clancy
+                                    href="https://www.youtube.com/embed/20yY_YxktT4"
+                                    target="tv_iframe" 
+                                    title="Jack Ryan de Tom Clancy">
+                                    <button id="myModal" 
+                                    class="btn btn-transparent text-white fw-bold"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >
+                                    Jack Ryan de Tom Clancy
+                                      </button>
                                 </a>
                                 </h5>
                                 <h6>Teaser Season 4 Promo</h6>
@@ -200,22 +302,34 @@
                         </div>
                         <div class="container cartaoBox">
                             <div class="cartao">
-                                <a class="imgLink" href="https://youtu.be/I4eB0K-_gQU" target="_blank">
+                                <a class="imgLink" href="https://www.youtube.com/embed/I4eB0K-_gQU" target="tv_iframe">
                                     <img 
                                     src="https://www.themoviedb.org/t/p/w355_and_h200_multi_faces/pkyRsuh9LYJ8f3Z8GIFDcqwVgmp.jpg" 
                                     alt="img-capa" 
                                     title="Mansão Mal-Assombrada">
                                     <div class="play">
-                                        <i class="fa-solid fa-play" style="color:#daa520"></i>
+                                        <button id="myModal" 
+                                        class="btn btn-transparent"
+                                        type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        >
+                                            <i class="fa-solid fa-play fa-2xl fs-1" style="color:#daa520"></i>
+                                        </button>
                                     </div>
                                 </a>
                             </div>
                             <div class="titulo-trailer">
                                 <h5 class="mb-0">
                                     <a 
-                                    href="https://youtu.be/I4eB0K-_gQU"
-                                    target="_blank" 
-                                    title="Mansão Mal-Assombrada">Mansão Mal-Assombrada
+                                    href="https://www.youtube.com/embed/I4eB0K-_gQU"
+                                    target="tv_iframe" 
+                                    title="Mansão Mal-Assombrada">
+                                    <button id="myModal" 
+                                    class="btn btn-transparent text-white fw-bold"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                    >
+                                    
+                                    Mansão Mal-Assombrada
+                                      </button>
                                 </a>
                                 </h5>
                                 <h6>Trailer 2 Oficial | LEG</h6>
@@ -257,4 +371,6 @@
  src="https://kit.fontawesome.com/ea89d0a57a.js" 
  crossorigin="anonymous">
 </script>
+<!-- Script js -->
+<script src="../js/script.js" defer></script>
 </html>

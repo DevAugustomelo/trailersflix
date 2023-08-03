@@ -110,7 +110,7 @@ main .bannerPrincipal{
 }
 
 div.videoFrame {
-    height: 90%;
+    height: 83.8%;
 
 }
 
@@ -181,7 +181,6 @@ main .ultimas .cartaoBox{
 
 main .ultimas .imagemBox .play{
     width: 300px;
-    height: calc(300px/1.67);
     height: auto;
     position: absolute;
     top: 0;
